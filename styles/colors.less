@@ -1,0 +1,26 @@
+// General colours
+@syntax-hue:          240;
+@syntax-saturation:   10%;
+@syntax-brightness:   12%;
+
+// Monochrome
+@mono-1: hsl(@syntax-hue, 14%, 71%);
+@mono-2: hsl(@syntax-hue,  9%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 40%);
+
+// Colours
+@hue-1:   hsl(173, 49%, 46%); // Cyan
+@hue-2:   hsl(230, 99%, 75%); // Blue
+@hue-3:   hsl(280, 60%, 60%); // Purple
+@hue-4:   hsl(162, 60%, 40%); // Green
+@hue-5:   hsl(345, 65%, 55%); // Red 1
+@hue-5-2: hsl( 10, 48%, 51%); // Red 2
+@hue-6:   hsl( 23, 64%, 56%); // Orange 1
+@hue-6-2: hsl( 39, 67%, 69%); // Orange 2
+
+// Base colours
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );
